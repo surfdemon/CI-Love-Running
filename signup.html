@@ -39,28 +39,27 @@
     <!-- Main Content -->
     <main>
         <!-- Sign Up form -->
-         <section id="signup-form">
-            <form action="https://formdump.codeinstitute.net" method="POST">
-                <h2>Lets Get You Signed Up!</h2>
+         <section id="signup">
+             <form action="https://formdump.codeinstitute.net" method="POST" id="signup-form">
+                <h2><i class="fa-solid fa-heart-pulse"></i> Lets Get You Signed Up!</h2>
                 <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name">
+                <input type="text" name="first-name" id="first-name" class="text-input">
                 <br>
                 <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name">
+                <input type="text" name="last-name" id="last-name" class="text-input">
                 <br>
                 <label for="email-address">Email Address</label>
-                <input type="text" name="email-address" id="email-address">
+                <input type="text" name="email-address" id="email-address" class="text-input">
                 <br>
-                <label for="road">Road</label>
-                <input type="radio" name="running_preference" id="road" value="road">
-                <br>
-                <label for="trail">Trail</label>
-                <input type="radio" name="running_preference" id="trail" value="trail">
-                <br>
-                <label for="both">Both</label>
-                <input type="radio" name="running_preference" id="both" value="both">
-                <br>
-                <input type="submit" value="Let's Run!" class="join-button">
+                <fieldset>
+                    <label for="road">Road</label>
+                    <input type="radio" name="running_preference" id="road" value="road">
+                    <label for="trail">Trail</label>
+                    <input type="radio" name="running_preference" id="trail" value="trail">
+                    <label for="both">Both</label>
+                    <input type="radio" name="running_preference" id="both" value="both">
+                </fieldset>
+                <input type="submit" value="Submit" class="join-button">
             </form>
          </section>
     </main>
